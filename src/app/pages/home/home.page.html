@@ -1,0 +1,35 @@
+
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title  class="ion-text-center ion-text">
+      Asistencia DUOC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding-horizontal bg-style">
+  <ion-title class="ion-padding-top">
+    <ion-label>
+      <h1 class="ion-text-center" style="font-size: 40px; color: rgb(255, 213, 0);">¡Bienvenido!</h1>
+      <p *ngIf="usuario" class="ion-text-center" style="font-weight: bold; font-size: 20px; color: rgb(32, 32, 32);">Usuario: {{ usuario.nombreUsuario }}</p>
+    </ion-label>
+  </ion-title>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-button @enterState shape="block" (click)="entrarScanner()">
+          Asistencia Por QR
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="warning">
+    <ion-title class="ion-text-center ion-text">
+       Avengers Team
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
